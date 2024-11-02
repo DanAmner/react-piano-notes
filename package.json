@@ -23,7 +23,9 @@
     "start": "BROWSER=none WDS_SOCKET_PORT=0 vite --port 3000",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "c8 vitest",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm test && npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +49,7 @@
     "@vitejs/plugin-react": "^4.1.1",
     "jsdom": "^22.1.0",
     "vite": "^4.5.5",
-    "vitest": "^0.34.6"
+    "vitest": "^0.34.6",
+    "c8": "^7.11.3"
   }
 }
