@@ -1,24 +1,11 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Container, Box, Link } from '@mui/material';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Piano Notes
-          </Typography>
-          <Box sx={{ display: 'flex', gap: 2 }}>
-            <Link href="/notes" color="inherit" underline="none">
-              Notes
-            </Link>
-            <Link href="/students" color="inherit" underline="none">
-              Students
-            </Link>
-          </Box>
-        </Toolbar>
-      </AppBar>
+      <Navbar />
       <Container>
         <Box sx={{ textAlign: 'center', my: 4 }}>
           <Typography variant="h2" component="h1">
