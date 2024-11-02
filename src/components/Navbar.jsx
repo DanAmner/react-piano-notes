@@ -6,9 +6,11 @@ const Navbar = () => {
   return (
     <AppBar position="static">
       <Toolbar>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          Piano Notes
-        </Typography>
+        <Link to="/" style={{ color: 'inherit', textDecoration: 'none', flexGrow: 1 }}>
+          <Typography variant="h6" component="div">
+            Piano Notes
+          </Typography>
+        </Link>
         <Box sx={{ display: 'flex', gap: 2 }}>
           <Link to="/notes" style={{ color: 'inherit', textDecoration: 'none' }}>
             Notes
