@@ -4,9 +4,9 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Navbar />
-      <Container>
+      <Container component="main" sx={{ flex: 1 }}>
         <Box sx={{ textAlign: 'center', my: 4 }}>
           <Typography variant="h2" component="h1">
             Piano Notes
@@ -16,7 +16,7 @@ function App() {
           </Typography>
         </Box>
       </Container>
-      <Box component="footer" sx={{ py: 2, textAlign: 'center', mt: 'auto', bgcolor: 'background.paper' }}>
+      <Box component="footer" sx={{ py: 2, textAlign: 'center', mt: 'auto', bgcolor: 'background.paper', border: '1px solid', borderColor: 'divider', padding: 2, marginTop: 2 }}>
         <Typography variant="body2" color="textSecondary">
           &copy; {new Date().getFullYear()} Piano Notes. All rights reserved.
         </Typography>
