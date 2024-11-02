@@ -1,7 +1,5 @@
 import React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Typography from '@mui/material/Typography';
-import Toolbar from '@mui/material/Toolbar';
+import { AppBar, Toolbar, Typography, Container, Box, Link } from '@mui/material';
 
 function App() {
   return (
@@ -9,25 +7,33 @@ function App() {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            GitHub Codespaces ♥️ React
+            Piano Notes
           </Typography>
+          <Box sx={{ display: 'flex', gap: 2 }}>
+            <Link href="/notes" color="inherit" underline="none">
+              Notes
+            </Link>
+            <Link href="/students" color="inherit" underline="none">
+              Students
+            </Link>
+          </Box>
         </Toolbar>
       </AppBar>
-      <div className="App-content">
-        <Typography variant="body1" component="p">
-          Edit <code>src/App.jsx</code> and save to reload.
+      <Container>
+        <Box sx={{ textAlign: 'center', my: 4 }}>
+          <Typography variant="h2" component="h1">
+            Piano Notes
+          </Typography>
+          <Typography variant="body1" component="p" sx={{ mt: 2 }}>
+            Piano Notes is an app for Piano Teachers to easily share their notes with their students
+          </Typography>
+        </Box>
+      </Container>
+      <Box component="footer" sx={{ py: 2, textAlign: 'center', mt: 'auto', bgcolor: 'background.paper' }}>
+        <Typography variant="body2" color="textSecondary">
+          &copy; {new Date().getFullYear()} Piano Notes. All rights reserved.
         </Typography>
-        <Typography variant="body1" component="p">
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </Typography>
-      </div>
+      </Box>
     </div>
   );
 }
