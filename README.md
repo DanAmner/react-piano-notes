@@ -13,6 +13,10 @@ The app includes the following navigation links in the nav bar:
 
 The main page includes a full-width hero element with the main title "Piano Notes" in the center of the page.
 
+## Paragraph Text
+
+The main page includes a paragraph of text with the content: "Piano Notes is an app for Piano Teachers to easily share their notes with their students."
+
 ## Footer
 
 The app includes a footer with the following content:
