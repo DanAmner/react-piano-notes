@@ -1,6 +1,7 @@
 import React from 'react';
 import { Typography, Container, Box } from '@mui/material';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function Students() {
   return (
@@ -16,6 +17,7 @@ function Students() {
           </Typography>
         </Box>
       </Container>
+      <Footer />
     </>
   );
 }
