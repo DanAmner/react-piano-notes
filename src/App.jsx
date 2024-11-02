@@ -1,6 +1,7 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Container, Box, Link } from '@mui/material';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,11 +17,7 @@ function App() {
           </Typography>
         </Box>
       </Container>
-      <Box component="footer" sx={{ py: 2, textAlign: 'center', mt: 'auto', bgcolor: 'background.paper', border: '1px solid', borderColor: 'divider', padding: 2, marginTop: 2 }}>
-        <Typography variant="body2" color="textSecondary">
-          &copy; {new Date().getFullYear()} Piano Notes. All rights reserved.
-        </Typography>
-      </Box>
+      <Footer />
     </div>
   );
 }
