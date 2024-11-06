@@ -20,7 +20,8 @@
     "start": "BROWSER=none WDS_SOCKET_PORT=0 vite --port 3000",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "vitest"
   },
   "eslintConfig": {
     "extends": [
@@ -46,7 +47,8 @@
     "vite": "^4.5.5",
     "eslint": "^8.34.0",
     "eslint-plugin-react": "^7.32.0",
-    "eslint-plugin-react-hooks": "^5.0.0"
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "vitest": "^0.0.118"
   },
   "engines": {
     "node": ">=16"
