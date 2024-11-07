@@ -48,7 +48,8 @@
     "eslint": "^8.34.0",
     "eslint-plugin-react": "^7.32.0",
     "eslint-plugin-react-hooks": "^5.0.0",
-    "vitest": "^2.1.4"
+    "vitest": "^2.1.4",
+    "@testing-library/react": "^16.0.1"
   },
   "engines": {
     "node": ">=16"
