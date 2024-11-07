@@ -1,12 +1,11 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, Container, Box, Link } from '@mui/material';
+import { Typography, Container, Box } from '@mui/material';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App" sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-      <Navbar />
       <Container component="main" sx={{ flex: 1 }}>
         <Box sx={{ textAlign: 'center', my: 4 }}>
           <Typography variant="h2" component="h1">
