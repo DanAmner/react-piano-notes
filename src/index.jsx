@@ -12,6 +12,7 @@ root.render(
   <React.StrictMode>
     <Router>
       <Routes>
+        <Navbar />
         <Route path="/" element={<App />} />
         <Route path="/notes" element={<Notes />} />
         <Route path="/students" element={<Students />} />
