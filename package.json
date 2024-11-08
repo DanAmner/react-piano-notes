@@ -23,7 +23,7 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "test": "vitest",
-    "deploy": "gh-pages -d dist/build"
+    "deploy": "gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [
