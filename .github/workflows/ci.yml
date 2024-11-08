@@ -7,14 +7,14 @@ on:
     paths:
       - 'package.json'
       - 'src/**'
-      - '.github/dependabot.yml'
+      - '.github/**.yml'
   pull_request:
     branches:
       - main
     paths:
       - 'package.json'
       - 'src/**'
-      - '.github/dependabot.yml'
+      - '.github/**.yml'
 
 jobs:
   build:
